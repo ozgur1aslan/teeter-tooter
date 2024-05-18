@@ -1,0 +1,81 @@
+.teeter-totter-container {
+  position: relative;
+  width: 1000px;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #000;
+  border-radius: 10px;
+}
+
+.teeter-totter {
+  position: absolute;
+  width: 1000px; 
+  height: 40px; 
+  background-color: #ccc; 
+  transition-duration: 5s;
+}
+
+.left-side {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 500px; 
+  height: 100%;
+  background-color: #ffa500; 
+  transform-origin: right center;
+}
+
+.right-side {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 500px; 
+  height: 100%;
+  background-color: #ffa500; 
+}
+
+.center-handle {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px; 
+  height: 40px; 
+  background-color: #000; 
+  border-radius: 50%;
+}
+
+.control-panel {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.weight-display {
+  position: absolute;
+  top: 10px; 
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.weight-info {
+  margin: 0 10px; 
+  font-size: 16px; 
+}
+
+.game-over-message {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
+}
